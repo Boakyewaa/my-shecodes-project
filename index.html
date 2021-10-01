@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SheCodes Plus WK2 Homework</title>
+  <link rel="stylesheet" type="text/css" href="src/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/747b9917a2.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+		<form id="search-engine">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for city..." id="search-city-input">
+      <button class="btn btn-primary" type="button">
+        <i class="fa fa-search fa-fw"></i>
+        Search
+      </button>
+		</div>
+		</form>
+  </div>
+  <div class="col-6">
+    <button class="btn btn-success" class="current-button" id="current-loc-button">
+    Current Location
+  </button>
+ </div>
+
+  <div class="my-clock">
+    <h3 class="time">
+      23:43 <br />
+      GMT
+    </h3>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>
+          Today
+        </h1>
+        <h2 id="city-display">
+        <i class="fas fa-home"></i>
+        </h2>
+        <img src="images/sun-behind-cloud.png" alt="sun behind small cloud" class="main-icon">
+
+        <h1 class="main-temp">
+
+					<span id="temp-to-change"></span>
+					<span class="units">
+					°C
+          </span> 
+					
+
+        </h1>
+        <h4 id="description">
+      
+        </h4>
+        <div class="row">
+          <div class="col-12 col-sm-3">
+            <span class="details"> WIND </span><br />
+            <span id="wind"><small>21km/h</small></span>
+          </div>
+          <div class="col-12 col-sm-3">
+            <span class="details">HUMIDITY</span><br />
+            <span id="humidity"><small>94%</small></span>
+          </div>
+          <div class="col-12 col-sm-3">
+            <span class="details">PRESSURE</span> <br />
+            <span id="pressure"><small>1011mb</small></span>
+          </div>
+          <div class="col-12 col-sm-3">
+            <span class="details">VISIBILITY</span> <br />
+            <span id="visibility"><small>10 km</small></span>
+          </div>
+        </div>
+
+        <button class="more-info">View Full Details</button>
+      </div>
+
+
+      <div class="col">
+        <h4>
+          Tomorrow
+        </h4>
+
+        <h3>
+          Monday
+        </h3>
+        <p class="tomorrow-temp">
+          29&deg;C <br /> 24&deg;C
+        </p>
+
+        <img src="images/sun-behind-cloud.png" alt="sun behind small cloud" class="tomorrow-icon">
+
+
+        <div class="row mt-3">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="days">
+                  Tuesday
+                </h4>
+                <p class="temp">
+                  29&deg;C <br /> 25&deg;C
+                </p>
+                <img src="images/sun-behind-cloud.png" alt="sun behind small cloud" class="icon-size">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="days">
+                  Wednesday
+                </h4>
+                <p class="temp">
+                  29&deg;C <br /> 25&deg;C
+                </p>
+                <img src="images/sun-behind-cloud.png" alt="sun behind small cloud" class="icon-size">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="days">
+                  Thursday
+                </h4>
+                <p class="temp">
+                  29&deg;C <br /> 25&deg;C
+                </p>
+                <img src="images/sun-behind-cloud.png" alt="sun behind small cloud" class="icon-size">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="days">
+                  Friday
+                </h4>
+                <p class="temp">
+                  29&deg;C <br /> 24&deg;C
+                </p>
+                <img src="images/sun-behind-cloud.png" alt="sun behind small cloud" class="icon-size">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="days">
+                  Saturday
+                </h4>
+                <p class="temp">
+                  29&deg;C <br /> 24&deg;C
+                </p>
+                <img src="images/cloud-rain.png" alt="cloud with raindrops" class="icon-size">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="more-info">
+          Weekly Report
+        </button>
+      </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>

@@ -9,6 +9,11 @@ h3 {
   color: #38a3a5;
 }
 
+footer {
+  margin: 50px 0 50px 0;
+  text-align: center;
+}
+
 #celcius-link {
   font-size: 45px;
   text-decoration: none;
@@ -110,6 +115,7 @@ h3 {
   color: #ffff;
   background: #0a58ca;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .more-info:hover {
@@ -117,4 +123,8 @@ h3 {
   background: #22577a;
   cursor: pointer;
   transition: all 200ms ease-in-out;
+}
+
+.coder-name {
+  color: #0a7dd9;
 }
